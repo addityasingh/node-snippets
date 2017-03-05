@@ -1,0 +1,21 @@
+{
+  "name": "node-streams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel -w src/ -d build/",
+    "prestart": "rimraf build && npm run build",
+    "start": "node build/ast.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "recast": "^0.11.18",
+    "rimraf": "^2.5.4"
+  }
+}
