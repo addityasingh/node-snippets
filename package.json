@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel -w src/ -d build/",
-    "prestart": "rimraf build && npm run build",
-    "start": "node build/ast.js "
+    "build": "babel -w src/ -d build/"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +15,13 @@
     "babel-preset-stage-0": "^6.16.0",
     "recast": "^0.11.18",
     "rimraf": "^2.5.4"
-  }
+  },
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "bindings": "^1.2.1",
+    "nan": "^2.6.2",
+    "request": "2.79.0",
+    "requestretry": "1.12.0"
+  },
+  "gypfile": true
 }

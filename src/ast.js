@@ -1,5 +1,5 @@
 'use strict';
-import recast from 'recast';
+const recast = require('recast');
 
 const code = [
   'function add(a, b) {',
