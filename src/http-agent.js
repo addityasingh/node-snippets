@@ -1,3 +1,7 @@
+/**
+ * Node samples to experiment with Node native http API
+ */
+
 const http = require('http')
 const url = require('url');
 const requestretry = require('requestretry');

@@ -1,3 +1,7 @@
+/**
+ * Nod samples to experiment with recast AST api
+ */
+
 'use strict';
 const recast = require('recast');
 
