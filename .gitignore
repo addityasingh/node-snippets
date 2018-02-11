@@ -1,4 +1,6 @@
 node_modules
 build
+src/brotli
 
 npm-debug.log
+package-lock.json
