@@ -1,0 +1,14 @@
+{
+  "name": "node-snippets-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-snippets-logger": "^1.0.0"
+  }
+}
