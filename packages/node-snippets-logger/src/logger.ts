@@ -1,5 +1,5 @@
-import pino from 'pino';
+import * as pino from 'pino';
 
 export const logger = {
-    info: 
+    info: (msg) => console.log(msg)
 };

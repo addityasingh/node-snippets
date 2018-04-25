@@ -4,3 +4,8 @@ src/brotli
 
 npm-debug.log
 package-lock.json
+
+packages/**/dist
+packages/**/node_modules
+
+lerna-debug.log
