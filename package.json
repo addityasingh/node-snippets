@@ -4,7 +4,7 @@
   "description": "A list of basic nodejs sample excercises and sample code snippets",
   "main": "index.js",
   "scripts": {
-    "test": "mocha src/**/*.spec.js -t=10000",
+    "test": "mocha packages/**/*.spec.js -t=10000 --exit",
     "build": "babel -w src/ -d build/",
     "compile": "lerna exec -- npm run compile"
   },
@@ -26,12 +26,14 @@
     "typescript": "^2.8.3"
   },
   "dependencies": {
+    "apollo-server-fastify": "^1.0.2",
     "benchmark": "^2.1.4",
     "body-parser": "^1.18.2",
     "fast-json-body": "^1.1.0",
     "fastify": "^1.2.1",
     "graphql": "^0.13.2",
     "hapi": "^17.3.1",
+    "node-tailor": "^3.7.1",
     "request": "2.79.0",
     "requestretry": "1.12.0"
   },

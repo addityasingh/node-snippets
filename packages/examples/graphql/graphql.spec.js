@@ -12,7 +12,7 @@ const {graphqlFastify, schema} = require('./graphql')
 const fastify = require('fastify')();
 
 describe('graphqlHTTP', () => {
-    let app, createApp;
+    let app, createApp, destroyApp;
 
     before(() => {
         createApp = async ({
@@ -26,12 +26,14 @@ describe('graphqlHTTP', () => {
                 fastify.log.error(err)
                 process.exit(1)
             }
-        }
-
+        };
     })
 
-    afterEach(() => {
-        app = null;
+    after(() => {
+        if(app && typeof app.close === 'function') {
+            app.close();
+            app = null;
+        }
     });
 
     it('can be called with an options function', async () => {
@@ -41,7 +43,7 @@ describe('graphqlHTTP', () => {
       const expected = {
         testString: 'it works',
       };
-      const req = request('http://localhost:3007')
+      const req = request(app)
         .post('/graphql')
         .send({
           query: 'query test{ testString }',
