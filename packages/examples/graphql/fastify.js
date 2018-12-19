@@ -10,6 +10,7 @@ app.register(graphqlFastify, { graphqlOptions: { schema } });
 app.listen(3000, (err) => {
   if (err) {
       app.log.error(err)
+      console.error('[Error]: Failed to start the server');
       process.exit(1)
   }
 })
