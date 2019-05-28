@@ -9,6 +9,22 @@ app.get('/some.css', (req, res) => {
         body
             color: red
     `).render();
+    // const css1 = stylus(`
+    //     body
+    //         color: red
+    // `).render();
+    // const css2 = stylus(`
+    //     body
+    //         color: red
+    // `).render();
+    // const css3 = stylus(`
+    //     body
+    //         color: red
+    // `).render();
+    // const css4 = stylus(`
+    //     body
+    //         color: red
+    // `).render();
     res.send(css);
 });
 

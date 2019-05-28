@@ -1,0 +1,1 @@
+module.exports = [ { frequency: 99, value: 100 }, { frequency: 1, value: 1012 } ]
