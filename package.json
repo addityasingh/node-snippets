@@ -36,7 +36,7 @@
     "hapi": "^17.3.1",
     "node-tailor": "^3.7.1",
     "request": "2.79.0",
-    "requestretry": "1.12.0",
+    "requestretry": "7.0.0",
     "stylus": "^0.54.5"
   },
   "gypfile": true
